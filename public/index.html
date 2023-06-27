@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>md table to json md table</title>
     <link rel="stylesheet" href="/css/simple.min.css">
-    <script src="mdTableToJson.js"></script>
 </head>
 <body>
   <header>
@@ -25,11 +24,15 @@
   </main>
 
   <button onclick="convert()">Convert</button>
+  <button onclick="copyOutput()" id= "copyButton" disabled="disabled">
+    Copy to Clipboard
+  </button>
 
   <pre><code id="output">output will appear here</code></pre>
 
   <footer>
     <p>Markdown table to json markdown table converter.</p>
   </footer>
+  <script src="mdTableToJson.js"></script>
 </body>
 </html>

@@ -42,10 +42,16 @@ function convertMarkdownTable(input) {
     codeFenceStart = "```json:table\n";
     codeFenceStop = "```\n";
 
+    document.getElementById("copyButton").disabled = false;
     return codeFenceStart + JSON.stringify(object, null, 2) + "\n" + codeFenceStop;
   } catch {
     return "couldn't parse the input";
   }
+}
+
+function copyOutput() {
+  const output = document.getElementById("output").innerText;
+  navigator.clipboard.writeText(output);
 }
 
 function convert() {
@@ -54,3 +60,4 @@ function convert() {
   document.getElementById("output").innerHTML = output;
 }
 
+document.getElementById("copyButton").disabled = true;
