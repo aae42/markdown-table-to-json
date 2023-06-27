@@ -33,14 +33,16 @@
       wrap="off"
       style="font-family: Courier, monospace"
       placeholder="paste your markdown table here"></textarea>
+    <div style="text-align: center">
+      <button style="width: 49.5%" onclick="convert()">Convert</button>
+      <button style="width: 49.5%" onclick="copyOutput()"
+        id="copyButton" disabled="disabled">
+        Copy to Clipboard
+      </button>
+    </div>
+
+    <pre><code id="output">output will appear here</code></pre>
   </main>
-
-  <button onclick="convert()">Convert</button>
-  <button onclick="copyOutput()" id="copyButton" disabled="disabled">
-    Copy to Clipboard
-  </button>
-
-  <pre><code id="output">output will appear here</code></pre>
 
   <footer>
     <p>Markdown table to json markdown table converter.</p>
