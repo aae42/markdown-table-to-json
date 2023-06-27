@@ -14,15 +14,13 @@
   <main>
     Converts your typical markdown table to a json code-fenced block that
     <a href="https://docs.gitlab.com/ee/user/markdown.html#json">GitLab can
-    render.</a>
+    render</a>.
     By default, it sets every setting and provides every field.
     These can be cleaned up/changed/removed after conversion.
     No data ever leaves your browser (feel free to view
     <a href="https://github.com/aae42/markdown-table-to-json">the source code</a>).
     <hr>
-    <textarea id="input" name="input" rows="20" cols="70">
-    paste your markdown table here
-    </textarea>
+    <textarea id="input" name="input" rows="20" cols="70" wrap="off" style="font-family: Courier, monospace">paste your markdown table here</textarea>
   </main>
 
   <button onclick="convert()">Convert</button>
