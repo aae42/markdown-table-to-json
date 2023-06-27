@@ -9,12 +9,9 @@ function parseLine(line) {
 function convertMarkdownTable(input) {
   try {
     const inputLines = input.split("\n");
-    console.log(inputLines);
 
     const markdown = inputLines.filter(line => !(line.trim() === ""));
-    console.log(markdown);
     const headers = parseLine(markdown[0]);
-    console.log(headers);
 
     const data = markdown.slice(2).map((dataLine) => parseLine(dataLine));
 
