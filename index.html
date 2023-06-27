@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>md table to json md table</title>
+    <link rel="stylesheet" href="/css/simple.min.css">
+    <script src="mdTableToJson.js"></script>
+</head>
+<body>
+  <header>
+    <h1>md table to json md table</h1>
+  </header>
+
+  <main>
+    Converts your typical markdown table to a json code-fenced block that
+    <a href="https://docs.gitlab.com/ee/user/markdown.html#json">GitLab can
+    render.</a>
+    <hr>
+    <textarea id="input" name="input" rows="20" cols="70">
+    paste your markdown table here
+    </textarea>
+  </main>
+
+  <button onclick="convertMarkdownTable()">Convert</button>
+
+  <pre><code id="output">output will appear here</code></pre>
+
+  <footer>
+    <p>Markdown table to json markdown table converter.</p>
+  </footer>
+</body>
+</html>
